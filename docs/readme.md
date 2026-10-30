@@ -1,8 +1,9 @@
 # The README header
 
 `README.md` opens with a centred block: logo, name, one-line pitch, fact badges,
-an App Store badge, a website button and jump links. Everything in it is a static
-file in this repo — the badges are committed SVG, not `img.shields.io` URLs.
+an App Store badge, a website button, Discord and X buttons, and jump links.
+Everything in it is a static file in this repo — the badges are committed SVG,
+not `img.shields.io` URLs.
 
 That is a deliberate choice. The product's claim is "no tracking, no analytics
 SDK, no third-party telemetry", so its own front page should not fetch images
@@ -15,7 +16,7 @@ from a third-party server every time somebody loads it.
 | `docs/brand/icon.png` | The app icon with its iOS corner mask baked in, for GitHub's light theme |
 | `docs/brand/icon-dark.png` | The same for `prefers-color-scheme: dark`, picked by `<picture>` |
 | `docs/brand/app-store.svg` | Apple's own "Download on the App Store" badge, unmodified |
-| `docs/badges/*.svg` | The fact badges and the website button, drawn here |
+| `docs/badges/*.svg` | The fact badges plus the website, Discord and X buttons, drawn here |
 
 `docs/screenshots/*.webp` are the marketing frames shown further down the README.
 

@@ -21,6 +21,10 @@
   <a href="https://apps.apple.com/app/id6777948055"><img src="docs/brand/app-store.svg" height="40" alt="从 App Store 下载"></a>
   &nbsp;&nbsp;
   <a href="https://bayeschat.xyz"><img src="docs/badges/website.svg" height="40" alt="bayeschat.xyz"></a>
+  &nbsp;&nbsp;
+  <a href="https://discord.com/invite/6sQVmYzUaP"><img src="docs/badges/discord.svg" height="40" alt="加入 Discord"></a>
+  &nbsp;&nbsp;
+  <a href="https://x.com/bayeschat"><img src="docs/badges/x.svg" height="40" alt="在 X 上关注 @bayeschat"></a>
 </p>
 
 <p align="center">
@@ -191,6 +195,8 @@
 ## 支持
 
 - **缺陷与问题：** [提交 issue](https://github.com/fan3cn/bayeschat/issues) —— 这是主要渠道
+- **Discord：** [discord.com/invite/6sQVmYzUaP](https://discord.com/invite/6sQVmYzUaP) —— 想快速问一句就来这里
+- **X：** [@bayeschat](https://x.com/bayeschat) —— 发布公告
 - **邮箱：** <bayeschat@gmail.com>，用于你不想公开发布的内容
 - **隐私政策：** [bayeschat.xyz/privacy.html](https://bayeschat.xyz/privacy.html) 是权威页面
   （[为什么本仓库只放链接](docs/privacy.md)）
