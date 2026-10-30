@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-29T07:47:14Z",
+  "generatedAt": "2026-10-29T14:14:48Z",
   "providers": [
     { "id": "openai", "name": "OpenAI", "baseURL": "https://api.openai.com/v1", "protocol": "openAICompatible", "modelsDevIDs": ["openai"] },
     { "id": "anthropic", "name": "Anthropic", "baseURL": "https://api.anthropic.com", "protocol": "anthropic", "modelsDevIDs": ["anthropic"] },
@@ -21,6 +21,7 @@
     { "id": "qwen", "name": "Qwen", "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1", "protocol": "openAICompatible", "modelsDevIDs": ["alibaba"], "keywords": ["qwen", "dashscope"] },
     { "id": "volcengine", "name": "Volcengine", "baseURL": "https://ark.cn-beijing.volces.com/api/v3", "protocol": "openAICompatible", "modelsDevIDs": ["volcengine"], "keywords": ["volcengine", "volces", "ark"] },
     { "id": "tencentcloud", "name": "Tencent Cloud", "baseURL": "https://api.hunyuan.cloud.tencent.com/v1", "protocol": "openAICompatible", "modelsDevIDs": [], "keywords": ["tencent", "hunyuan"] },
-    { "id": "stepfun", "name": "StepFun", "baseURL": "https://api.stepfun.com/v1", "protocol": "openAICompatible", "modelsDevIDs": ["stepfun"] }
+    { "id": "stepfun", "name": "StepFun", "baseURL": "https://api.stepfun.com/v1", "protocol": "openAICompatible", "modelsDevIDs": ["stepfun"] },
+    { "id": "iteracompute", "name": "IteraCompute", "baseURL": "https://api.iteracompute.com/v1", "protocol": "openAICompatible", "modelsDevIDs": ["iteracompute"], "keywords": ["iteracompute"], "logo": "providers/logos/iteracompute.png" }
   ]
 }
