@@ -197,7 +197,7 @@
 - **缺陷与问题：** [提交 issue](https://github.com/fan3cn/bayeschat/issues) —— 这是主要渠道
 - **Discord：** [discord.com/invite/6sQVmYzUaP](https://discord.com/invite/6sQVmYzUaP) —— 想快速问一句就来这里
 - **X：** [@bayeschat](https://x.com/bayeschat) —— 发布公告
-- **邮箱：** <bayeschat@gmail.com>，用于你不想公开发布的内容
+- **邮箱：** <support@bayeschat.xyz>，用于你不想公开发布的内容
 - **隐私政策：** [bayeschat.xyz/privacy.html](https://bayeschat.xyz/privacy.html) 是权威页面
   （[为什么本仓库只放链接](docs/privacy.md)）
 - **每个版本改了什么：** [CHANGELOG.md](CHANGELOG.md)（逐条技术记录）
