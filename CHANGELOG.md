@@ -2,6 +2,31 @@
 
 All notable changes to BayesChat are recorded in this file.
 
+## [1.1.8] - 2026-11-02
+
+<!-- build 56 | since 1.1.7 (d685a0c) | d685a0c..4adc5d5 | 16 commits -->
+
+### New Features
+
+- About has a page on Bayes' theorem: the formula set as a fraction, the minister who never published it, and why a language model is that one line run billions of times (5f7a3da)
+
+### Changed
+
+- The model now knows what time it is without being told in a prompt: every user message carries the local time it was written, so questions about today, now or how long ago something happened are answered against the clock instead of the training data (bef66e6)
+- That time travels with the message rather than inside the instructions, which means a conversation no longer rewrites its own system prompt every minute and the prompt cache keeps answering from the same place it left off (bef66e6)
+- The prompt template editor offers only the model ID now: the timezone rides the send time on each message, and the rest of its variables are gone along with the cache warning they needed (bef66e6)
+- The developer contact address in About and on the privacy and terms pages is now support@bayeschat.xyz, so reaching support no longer depends on a mailbox a provider can shut down (4008124)
+- Contact Developer drafts the message with the app version, device model, iOS version and app language already in the body, so a report arrives answerable instead of prompting a follow-up question (6273320)
+
+### Fixed
+
+- Scrolling text stops exactly at the input box: the card's shadow no longer spills a hazy band above its top edge, so the last line dissolves behind the card instead of running through a narrow dirty strip (64ab810)
+
+### Removed
+
+- Current date, current time, current weekday, current datetime and timezone prompt variables, replaced by the send time on each message (bef66e6)
+
+
 ## [1.1.7] - 2026-10-29
 
 <!-- build 55 | since 1.1.6 (d565aef) | d565aef..d685a0c | 188 commits -->

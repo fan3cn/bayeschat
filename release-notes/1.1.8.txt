@@ -1,0 +1,12 @@
+Release date: November 2, 2026
+
+
+Highlights:
+• The model knows what time it is: every message carries the local time it was written, and the date, time, weekday and timezone prompt variables are gone.
+• That time travels with the message instead of the instructions, so a conversation no longer rewrites its own system prompt every minute and the prompt cache keeps answering from where it left off.
+• About has a page on Bayes' theorem: the formula set as a fraction, the minister who never published it, and why a language model is that one line run billions of times.
+
+Also in this update:
+• Contact Developer opens a draft with the app version, device model, iOS version and app language already in the body.
+• The support address is now support@bayeschat.xyz, in About and on the privacy and terms pages.
+• Scrolling text stops exactly at the input box: the card's shadow no longer spills a hazy band above its top edge.
