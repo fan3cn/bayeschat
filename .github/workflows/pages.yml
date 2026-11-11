@@ -15,6 +15,8 @@ name: Demo page
 # from the artifact rather than from a branch folder: Pages' branch mode can
 # only serve `/` or `/docs`, and `/docs` is the app's documentation.
 
+run-name: Demo page · ${{ github.ref_name }}
+
 on:
   push:
     branches: [main]
