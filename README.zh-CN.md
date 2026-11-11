@@ -28,7 +28,14 @@
 </p>
 
 <p align="center">
-  <a href="https://fan3cn.github.io/bayeschat/"><code>在线演示</code></a> &nbsp;
+  <a href="https://fan3cn.github.io/bayeschat/">
+    <img src="docs/brand/demo-hero.png" width="860" alt="BayesChat 演示 —— 88 秒，在浏览器里实时播放">
+  </a>
+</p>
+
+<p align="center"><sub><b>在线演示</b> —— 88 秒，浏览器里实时播放。没有视频文件，无需下载。</sub></p>
+
+<p align="center">
   <a href="docs/"><code>文档</code></a> &nbsp;
   <a href="#截图"><code>截图</code></a> &nbsp;
   <a href="CHANGELOG.md"><code>更新日志</code></a> &nbsp;
