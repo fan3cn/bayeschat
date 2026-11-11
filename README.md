@@ -28,6 +28,7 @@
 </p>
 
 <p align="center">
+  <a href="https://fan3cn.github.io/bayeschat/"><code>Watch demo</code></a> &nbsp;
   <a href="docs/"><code>Docs</code></a> &nbsp;
   <a href="#screenshots"><code>Screenshots</code></a> &nbsp;
   <a href="CHANGELOG.md"><code>Changelog</code></a> &nbsp;

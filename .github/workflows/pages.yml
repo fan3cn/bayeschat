@@ -1,0 +1,56 @@
+name: Demo page
+
+# `demo/` is generated, not authored: scripts/build-demo.py in the private
+# landing repository exports the promo film self-contained and wraps it in a
+# player, and the result is committed here because GitHub Pages can only serve
+# what this repository contains.
+#
+#   python3 scripts/build-demo.py --out ../BayesChat-facade/demo
+#
+# Do not edit `demo/` by hand — re-export and commit. `--check` fails when the
+# committed copy no longer matches the film, which is how this cannot quietly
+# go stale after a re-cut.
+#
+# The page is the film itself (https://fan3cn.github.io/bayeschat/), published
+# from the artifact rather than from a branch folder: Pages' branch mode can
+# only serve `/` or `/docs`, and `/docs` is the app's documentation.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'demo/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # `enablement` turns Pages on with source "GitHub Actions" on the first
+      # run. It needs an admin token; if this step reports that it cannot, the
+      # one-time fix is Settings → Pages → Source → GitHub Actions.
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: demo
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
