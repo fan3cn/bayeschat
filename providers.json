@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-29T14:14:48Z",
+  "generatedAt": "2026-11-13T01:58:28Z",
   "providers": [
     { "id": "openai", "name": "OpenAI", "baseURL": "https://api.openai.com/v1", "protocol": "openAICompatible", "modelsDevIDs": ["openai"] },
     { "id": "anthropic", "name": "Anthropic", "baseURL": "https://api.anthropic.com", "protocol": "anthropic", "modelsDevIDs": ["anthropic"] },
@@ -13,7 +13,7 @@
     { "id": "together", "name": "Together AI", "baseURL": "https://api.together.xyz/v1", "protocol": "openAICompatible", "modelsDevIDs": ["togetherai"] },
     { "id": "fireworks", "name": "Fireworks AI", "baseURL": "https://api.fireworks.ai/inference/v1", "protocol": "openAICompatible", "modelsDevIDs": ["fireworks-ai"] },
     { "id": "opencode", "name": "OpenCode", "baseURL": "https://opencode.ai/zen/v1", "protocol": "openAICompatible", "modelsDevIDs": ["opencode"] },
-    { "id": "opencode-go", "name": "OpenCode Go", "baseURL": "https://opencode.ai/zen/go/v1", "protocol": "openAICompatible", "modelsDevIDs": ["opencode"], "keywords": ["opencode go", "zen/go"], "logo": "providers/logos/opencode-go.png" },
+    { "id": "opencode-go", "name": "OpenCode Go", "baseURL": "https://opencode.ai/zen/go/v1", "protocol": "openAICompatible", "modelsDevIDs": ["opencode"], "keywords": ["opencode go", "zen/go"] },
     { "id": "zhipu", "name": "Zhipu AI", "baseURL": "https://open.bigmodel.cn/api/paas/v4", "protocol": "openAICompatible", "modelsDevIDs": ["zai", "zhipuai"], "keywords": ["zhipu", "bigmodel", "glm"] },
     { "id": "moonshot", "name": "Moonshot Kimi", "baseURL": "https://api.moonshot.cn/v1", "protocol": "openAICompatible", "modelsDevIDs": ["moonshotai"], "keywords": ["moonshot", "kimi"] },
     { "id": "minimax", "name": "MiniMax", "baseURL": "https://api.minimaxi.com/v1", "protocol": "openAICompatible", "modelsDevIDs": ["minimax", "minimax-cn"] },
