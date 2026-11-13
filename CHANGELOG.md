@@ -2,6 +2,65 @@
 
 All notable changes to BayesChat are recorded in this file.
 
+## [1.1.9] - 2026-11-13
+
+<!-- build 57 | since 1.1.8 (4adc5d5) | 4adc5d5..b7176a3 | 70 commits -->
+
+### Added
+
+- Adding OpenCode or OpenCode Go fills in the session header their API requires, so a newly added key works without a custom header being typed by hand (4475b6c)
+- Hardware keyboards and the iPad menu bar get New Chat, Chat history and Settings on Command-N, Command-0 and Command-comma, so the app can be driven without leaving the keyboard (73b1e7b)
+- A file or photo can be dropped anywhere on the chat, not only on the input box, and the rows and controls react as a pointer moves over them (b8d52cd)
+
+### Changed
+
+- Reasoning and tool output are no longer filled cards: a thin accent rule and secondary text mark them as annotations, so the answer stays the only filled surface in a turn (71a0d73)
+- The chat column is wider on an iPad: the reading measure and the composer grow from 720 to 780 points, so the input box no longer floats with 105 points of empty canvas on each side, while its edge, the prose and the iPad header buttons stay on one vertical line (4286a82)
+- The conversation list is 320 points wide on an iPad, the width Apple's own iPad sidebars use, instead of 280, so long titles truncate less and the chat column beside it sits 20 points closer to the list (4286a82)
+- The model panel is one list under a system navigation bar: Manage and the add button are bar buttons with full-size targets, the search now covers favorites as well as providers, and favorites is the list's first section instead of a second page, so the page dots are gone (77ad124)
+- Search sits at the top of the conversation list whenever the list shares the screen with the chat (iPad and an unfolded Duo, both orientations), and keeps the bottom toolbar on the full-screen drawer, so the Duo no longer drops the field to the bottom in landscape (37e3dd8)
+- The Duo cover's search field now uses the system Liquid Glass capsule instead of a fill that matched the canvas and left no visible container (37e3dd8)
+- Settings sits in the list's top bar when the list shares the screen with the chat (iPad and an unfolded Duo), so it no longer competes with the input box at the bottom (9504649)
+- Folding or unfolding the Duo no longer rebuilds the conversation: the chat keeps the same view across the drawer and sidebar modes, so switching displays is a layout change instead of a transcript reload (0024233)
+- On the Duo's cover display the conversation list also closes when you tap the strip beside it under the right-hand Dock (8eb7e41)
+- On iPad the conversation list is a sidebar that stays open beside the chat in both orientations, and the iPhone Duo uses the same sidebar when it is unfolded wide enough for the chat to keep a column beside it (9101f2d, a5f2056, a7839d2)
+- The Duo's inner portrait now splits at 249pt of list beside a 420pt chat instead of opening a 380pt drawer over most of the screen, and a narrow sidebar puts the time under the conversation title so the title keeps its line (b957f66)
+- The conversation beside the list no longer lifts when you type in the list's search field on a display that shows both columns at once (an unfolded Duo): the keyboard belongs to the column you tapped, and moving the caret to the chat still lifts it straight away (94f36c4)
+- The conversation title on the unfolded Duo's portrait now uses the side the new-chat button left when it moved to the Dock, instead of staying clipped to the old two-button inset (94f36c4)
+- The Duo cover's conversation list is just its title and a Settings gear now: the close button, the new-chat button and the foot-of-list Settings row are gone, closing the page is the display's own Dock control, and the list stops at the Dock column instead of running under it (94f36c4)
+- The Duo cover's conversation list has a fixed header and search field instead of the system navigation bar, so opening it no longer shifts the list and search no longer lands in the side status column (b957f66)
+- On the Duo's inner portrait the new-chat button sits in the right-hand Dock below the Wi-Fi glyph, centred on it, and the navigation row no longer draws a second copy (97abc97, 0ff962e, a70870b)
+- The Duo refreshes its layout when moving between the cover and inner display or rotating; the app now re-evaluates its window and screen metrics whenever the measured window size changes (b957f66)
+- The Duo no longer hangs when rotating between portrait and landscape: the folded cover keeps its full-screen drawer in both orientations while the unfolded screen keeps its sidebar, so the shell no longer swaps containers and rebuilds the chat mid-rotation (5cdd1c7, 806c849)
+- Closing the conversation sidebar slides the chat back at the same pace as the panel instead of snapping it into place while only the panel animated out (a5f2056)
+- The history panel pushes the chat aside with the same motion on iPhone and the iPhone Duo, and the strip of chat left visible beside it is dimmed so the panel reads as the front surface (a5f2056)
+- The sidebar no longer carries a second history toggle beside the chat's own, and Settings moves from the sidebar header to a labelled row at its foot so the column title keeps its full width (8d336ca)
+- Settings opens as a centred form sheet on iPad instead of a page that filled most of the window, and it now closes with a Done button (ef494cc)
+- On iPad and an unfolded iPhone Duo the conversation is set as a centred reading column instead of running edge to edge: prose, the starter cards and the input box are capped at a comfortable measure, and the history panel opens at sidebar width rather than covering the window (6e57a69)
+- Rotating, resizing or splitting the window keeps your place in the conversation instead of reflowing onto different text, and a reader who was at the bottom stays at the bottom (4287925)
+
+### Fixed
+
+- On iOS 17.5 the setup guide, its close button and the transcript respond to taps again: the composer host filled the whole chat and that OS dropped touches outside the input bar instead of passing them down, so the guide was dead and tapping could not dismiss the keyboard (b7176a3)
+- A freshly installed app no longer asks for photo library access when it first opens: the ask comes only after Choose Photos, not from the plus button, which also uploads files and opens the camera, and declining it still opens the picker (12639c6)
+- OpenCode Go shows the OpenCode mark instead of a letter avatar (0ec6e0f)
+- Closing Settings after folding the iPhone Duo to the cover leaves the chat running the full width of the display instead of stopping short of the status column: the display questions resolve while Settings has the chat window hidden, and the chat rebuilds for the display it lands on (9bf8183)
+- The conversation list keeps its title and Settings gear in place when the keyboard opens on an unfolded iPhone Duo in landscape, instead of swapping its header row for a system bar and sliding with the keyboard every time the composer or the search field is focused (a495522)
+- On iPad the history and new-chat buttons and the input box sit on the same vertical line as the chat text in both orientations, instead of the buttons on the column's edge and the prose 90pt further in beside the sidebar (fcc9d55)
+- A model picked right after adding its provider from the model panel is the model the chat sends with, instead of the first message answering that no model is selected until Settings refetched and saved the provider again (1096259)
+- The Duo cover's conversation list no longer stops two Dock widths short of the right-hand column: the band it leaves for the display's status column is measured from the page's own width, so a fold that lands with the side safe area still applied no longer takes that column out twice (94f36c4)
+- The model picker shows the same long search field above the list on every display instead of a navigation-bar button on iPad and the Duo, and swiping between Favorites and Models no longer re-lays the pages out mid-swipe (77ad124, 94f36c4)
+- The Settings gear on the Duo's sidebar now opens Settings; the button was firing, but the state change that opened the sheet never reached the presenter on that display (2895bbd)
+- Folding the Duo from the unfolded landscape no longer leaves the cover on the sidebar layout: the chat re-evaluates its container from the window's real size, so the cover shows the conversation and responds to taps (e760c5f)
+- The Duo cover's conversation search now puts the keyboard away when you tap the list, the header or Settings, when you scroll the list, and when the drawer closes (476a668)
+- On the iPhone Duo's cover display the history drawer now fills the screen and leaves the right status column as its chrome, so there is no dimmed strip or exposed chat peek (b957f66)
+- The chat on the iPhone Duo's cover display stays inside the 382pt content column instead of running under the right-hand status bar, and the input box uses the same column as the transcript (b957f66)
+- The reasoning panel no longer opens taller than the iPad window it belongs to, and code and formula blocks measure at their real column width the first time they paint instead of at screen width (a9c1b89)
+- The input box stays on the keyboard's top edge in an iPad window, a Split View column or Stage Manager, where it used to rise by a whole keyboard height and leave a blank band underneath (3c8d4de)
+- The history button and the chat title no longer sit underneath the window controls iPadOS draws in a window's top-left corner (3c8d4de)
+- A run that finished after its chat was moved to another conversation closes its system card with a sentence instead of leaving the last phase on screen, so the small island's tick and the expanded card no longer disagree (8bf56a3)
+- Tables whose rows carry several prices suddenly spilled into one long cell per row, because the renderer mistook the currency dollars in a row for the start of a math span and swallowed the pipes between them (12559db)
+
 ## [1.1.8] - 2026-11-02
 
 <!-- build 56 | since 1.1.7 (d685a0c) | d685a0c..4adc5d5 | 16 commits -->

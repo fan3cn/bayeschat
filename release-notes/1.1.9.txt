@@ -1,0 +1,21 @@
+Release date: November 13, 2026
+
+
+Highlights:
+• iPad has a chat list that stays open beside the conversation in both orientations, and the chat is set as a centred reading column instead of running edge to edge.
+• Settings opens as a centred sheet on iPad and closes with Done, and the new chat, history and Settings commands work from a hardware keyboard or the menu bar.
+• On an iPhone Duo the cover now uses the whole screen and the unfolded portrait gives the chat a real column beside the list, and folding or unfolding keeps the same conversation loaded instead of rebuilding it.
+• Reasoning and tool output read as annotations in the transcript: a thin accent rule and secondary text instead of filled cards, so the answer stays the thing you see first.
+• The model panel is one list with one search field: Favorites, providers and models all answer to the same search, on every display.
+
+Also in this update:
+• Rotating, resizing or splitting the window keeps your place in the conversation, and a reader who was at the bottom stays at the bottom.
+• OpenCode and OpenCode Go can be added with just a key: the session header their API requires is filled in for you, and OpenCode Go shows the OpenCode mark.
+• The app asks for photo library access only when you choose photos, not when it first opens.
+• On iOS 17.5 the setup guide, its close button and the transcript respond to taps again.
+• The search field on the Duo's cover uses the system Liquid Glass capsule.
+• The input box stays on the keyboard's top edge in an iPad window, a Split View column or Stage Manager, and the history button and title no longer sit under the window controls.
+• Table rows with several prices keep their columns instead of collapsing into one long cell.
+• A background task that finishes after you switch conversations closes its card as a complete sentence.
+• A model picked right after adding its provider is the model the chat sends with.
+• Fixed a fold that left the cover on the sidebar layout, a Settings gear that did not open Settings on the Duo, and a rotation freeze on the Duo.
